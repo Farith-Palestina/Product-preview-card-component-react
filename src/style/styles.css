@@ -149,6 +149,7 @@ body{
 
 .footer-page p a{
     text-decoration: none;
+    color: hsl(158, 36%, 40%);;
     transition: all 500ms ease;
 }
 
