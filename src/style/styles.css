@@ -1,0 +1,204 @@
+*{
+    margin: 0;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../assets/fonts/Montserrat.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Fraunces';
+    src: url('../assets/fonts/Fraunces.ttf') format('truetype');
+}
+
+body{
+    background: hsl(30, 38%, 92%);
+    padding-top: 10%;
+}
+
+.container{
+    margin: auto;
+    width: 45%;
+    background: hsl(0, 0%, 100%);
+    border-radius: 10px;
+}
+
+.columns-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.columns-price-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.image-container{
+    background-image: url('../assets/images/image-product-desktop.jpg');
+    background-size: cover;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.description-container{
+    padding: 30px 25px 30px 25px;
+}
+
+.product-type{
+    font-family: 'Montserrat';
+    color: hsl(228, 12%, 48%);
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.name-product-container{
+    padding-top: 25px;
+    padding-right: 30px;
+}
+
+.name-product{
+    font-family: 'Fraunces';
+    color: hsl(212, 21%, 14%);
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.description-product-container{
+    padding-top: 25px;
+    padding-right: 30px;
+}
+
+.description-product{
+    font-family: 'Montserrat';
+    color: hsl(228, 12%, 48%);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 25px;
+}
+
+.price-product-container{
+    padding-top: 30px;
+}
+
+.price-product{
+    font-family: 'Fraunces';
+    color: hsl(158, 36%, 37%);
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.last-price-product-container{
+    padding-top: 32.5px;
+    padding-left: 10px;
+}
+
+.last-price-product{
+    font-family: 'Montserrat';
+    color: hsl(228, 12%, 48%);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 25px;
+    text-decoration: line-through;
+}
+
+.button-add-to-cart-container{
+    padding-top: 30px;
+    width: 95%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button-add-to-cart{
+    background-color: hsl(158, 36%, 37%);
+    width: 100%;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 500ms ease;
+}
+
+.button-add-to-cart:hover{
+    background-color: hsl(158, 36%, 19%);
+}
+
+.button-add-to-cart p{
+    padding-left: 15px;
+    font-family: 'Montserrat';
+    color: hsl(0, 0%, 100%);
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 25px;
+}
+
+.footer-page{
+    padding-top: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-page p{
+    font-family: 'HankenGrotesk-Variable';
+}
+
+.footer-page p a{
+    text-decoration: none;
+    transition: all 500ms ease;
+}
+
+.footer-page p a:hover{
+    color: red;
+}
+
+@media screen and (max-width: 768px) {
+    body{
+        background: hsl(30, 38%, 92%);
+        padding-top: 5%;
+        padding-bottom: 7.5%;
+    }
+
+    .container{
+        margin: auto;
+        width: 90%;
+        background: hsl(0, 0%, 100%);
+        border-radius: 10px;
+    }
+
+    .columns-container{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .image-container{
+        background-image: url('../assets/images/image-product-mobile.jpg');
+        background-size: cover;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 0px;
+        height: 250px;
+    }
+
+    .description-container{
+        padding: 30px 10px 30px 20px;
+    }
+
+    .name-product{
+        font-family: 'Fraunces';
+        color: hsl(212, 21%, 14%);
+        font-size: 30px;
+        font-weight: 700;
+    }
+
+    .footer-page{
+        padding-top: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
